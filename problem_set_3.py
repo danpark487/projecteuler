@@ -1,3 +1,4 @@
+import math
 def is_prime(n):
 	"""
 	Check if n is a prime
@@ -15,10 +16,11 @@ def largest_prime(x):
 	"""
 	prime_list = []
 	divide_list = []
-	for i in range(2, x+1):
+	for i in range(2, int(math.sqrt(x))):
 		if x%i == 0:
 			divide_list.append(i)
+
 	for num in divide_list:
-		if is_prime(num):
-			prime_list.append(num)
+	 	if is_prime(num):
+	 		prime_list.append(num)
 	print max(prime_list)
