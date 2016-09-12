@@ -1,4 +1,7 @@
 def isPrime(x):
+	"""
+	Check where x is a prime number
+	"""
 	counter = 2
 	while counter < x:
 		if x%counter != 0:
@@ -9,6 +12,9 @@ def isPrime(x):
 
 
 def prime_num(n):
+	"""
+	Finds the nth prime number
+	"""
 	counter = 1
 	num = 3
 	while counter < int(n):
